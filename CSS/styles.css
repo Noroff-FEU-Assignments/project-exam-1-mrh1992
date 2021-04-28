@@ -1,0 +1,154 @@
+:root {
+  --beige: #f5f5dc;
+  --green: #596c56;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--beige);
+}
+
+/* Navigation */
+
+header {
+  height: 100px;
+  background-color: var(--white);
+  padding: 10px 0;
+}
+
+.dropdown-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.hamburger-bars {
+  font-size: 26px;
+  color: var(--green);
+  line-height: 80px;
+}
+
+nav {
+  z-index: 9999;
+  position: absolute;
+  background-color: var(--white);
+  top: 100px;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav ul li a:hover {
+  color: var(--green);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav ul {
+  max-height: 250px;
+  padding: 15px 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--white);
+  color: var(--green);
+  line-height: 28px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.footer-container {
+  flex: 1;
+}
+
+.footer-sections {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  padding: 20px;
+  min-width: 200px;
+  list-style: none;
+  padding-left: 0;
+}
+
+h4 {
+  font-size: 24px;
+  border-bottom: 2px solid var(--green);
+  margin-bottom: 10px;
+}
+
+.copywrite {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger-bars {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    top: -10px;
+  }
+
+  nav ul {
+    max-height: 100px;
+    margin-top: 25px;
+    text-align: right;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    align-content: center;
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+
+  .footer-sections {
+    justify-content: space-evenly;
+  }
+}
