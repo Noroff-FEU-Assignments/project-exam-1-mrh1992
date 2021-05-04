@@ -93,16 +93,16 @@ nav ul li a:hover {
 
 h2 {
   position: absolute;
-  top: 30%;
-  left: 60%;
+  top: 20%;
+  left: 50%;
   font-weight: lighter;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 .readmore {
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 60%;
   border: none;
   background-color: var(--green);
   color: var(--white);
@@ -176,6 +176,10 @@ h4 {
   nav ul li a {
     font-size: 26px;
     padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 48px;
   }
 
   .footer-sections {
