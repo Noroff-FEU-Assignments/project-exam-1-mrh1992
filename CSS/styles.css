@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 h2 {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   font-weight: lighter;
   font-size: 24px;
@@ -102,7 +102,7 @@ h2 {
 .readmore {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
   border: none;
   background-color: var(--green);
   color: var(--white);
