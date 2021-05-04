@@ -81,6 +81,35 @@ nav ul li a:hover {
   padding: 15px 0;
 }
 
+/* Main */
+
+.frontpage-container {
+  position: relative;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+h2 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  font-weight: lighter;
+  font-size: 48px;
+}
+
+.readmore {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 10px;
+  font-size: 18px;
+}
+
 /* Footer */
 
 footer {
