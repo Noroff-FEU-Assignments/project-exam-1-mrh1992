@@ -1,0 +1,22 @@
+.posts-area {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.blog-posts {
+  max-width: 250px;
+  margin: 30px;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.blog-img {
+  max-width: 100%;
+}
