@@ -18,7 +18,7 @@ getPosts();
 
 function createHTML(posts) {
     posts.forEach(function(post){
-        postsContainer.innerHTML += `<div class="blog-posts">
+        postsContainer.innerHTML += `<div class="post-card">
                                         <img src=${post._embedded['wp:featuredmedia']['0'].source_url} class="blog-img">
                                         <h3>${post.title.rendered}</h3>
                                         <p>By: ${post._embedded.author[0].name}</p>
