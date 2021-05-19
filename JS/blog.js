@@ -15,10 +15,13 @@ async function getPosts() {
         for (let i = 0; i < results.length; i++) {
             console.log(results[i].name);
 
+            const convertDate = new Date (results[i].date).toLocaleString("en-GB", {day: "numeric", month: "long", year: "numeric",});
+
             postsContainer.innerHTML += `<div class="post-card">
                                             <img src=${results[i]._embedded['wp:featuredmedia']['0'].source_url} class="blog-img">
                                             <h3>${results[i].title.rendered}</h3>
                                             <p>By: ${results[i]._embedded.author[0].name}</p>
+                                            <p>Posted: ${convertDate}</p>
                                             <a href="blogdetails.html?id=${results[i].id}">
                                                 <button class="read-button">Read Post</button>
                                             </a>
