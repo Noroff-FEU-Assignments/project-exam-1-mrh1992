@@ -1,10 +1,42 @@
-.blogdetail-container {
-  max-width: 800px;
+.body-details {
   margin: 0 auto;
 }
 
+.blogdetail-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .posts-container {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.blog-content {
+  margin-top: 20px;
+  max-width: 700px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin-top: 10px;
+}
+
+.author-info {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.posted-date {
+  margin-right: 20px;
+}
+
+p {
+  padding-top: 10px;
 }
