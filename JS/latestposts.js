@@ -1,7 +1,7 @@
 const url = "http://localhost:8888/hollund-plants/wp-json/wp/v2/posts?_embed";
 const latestContainer = document.querySelector(".latest-container");
 
-async function getLatest() {
+async function getLatestPosts() {
     try {
         const response = await fetch(url);
 
@@ -29,4 +29,4 @@ async function getLatest() {
     }
 }
 
-getLatest();
+getLatestPosts();

@@ -41,6 +41,8 @@ h3 {
   display: none;
 }
 
+/* Load More */
+
 .post-card:nth-child(1),
 .post-card:nth-child(2),
 .post-card:nth-child(3),

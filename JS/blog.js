@@ -21,7 +21,6 @@ async function getPosts() {
                                             <img src=${results[i]._embedded['wp:featuredmedia']['0'].source_url} class="blog-img">
                                             <h3>${results[i].title.rendered}</h3>
                                             <p>By: ${results[i]._embedded.author[0].name}</p>
-                                            <p>Posted: ${convertDate}</p>
                                             <a href="blogdetails.html?id=${results[i].id}">
                                                 <button class="read-button">Read Post</button>
                                             </a>
@@ -43,17 +42,17 @@ let defaultPosts = 9;
 
 loadMore.addEventListener("click", (e) => {
 
-    const blogPost = document.querySelectorAll(".post-card");
+    const morePost = document.querySelectorAll(".post-card");
 
     for (let i = defaultPosts; i < defaultPosts + 3; i++) {
-        if (defaultPosts < blogPost.length) {
-            blogPost[i].style.display = "block";
+        if (defaultPosts < morePost.length) {
+            morePost[i].style.display = "block";
         }
     }
 
     defaultPosts += 3;
 
-    if (defaultPosts >= blogPost.length) {
+    if (defaultPosts >= morePost.length) {
         loadMore.style.display = "none";
     }
 })

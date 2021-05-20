@@ -1,22 +1,17 @@
-.body-details {
+.blogdetail-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-.blogdetail-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.posts-container {
-  display: grid;
-  justify-items: center;
-  margin-bottom: 50px;
+.content-container {
+  max-width: 700px;
 }
 
 .blog-content {
-  margin-top: 20px;
-  max-width: 700px;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 img {
