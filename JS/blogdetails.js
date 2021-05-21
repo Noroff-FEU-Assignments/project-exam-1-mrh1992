@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url ="http://localhost:8888/hollund-plants/wp-json/wp/v2/posts/" + id + "?_embed";
+const url ="https://www.hollundflowerpower.one/wp-json/wp/v2/posts/" + id + "?_embed";
 
 console.log(url);
 
