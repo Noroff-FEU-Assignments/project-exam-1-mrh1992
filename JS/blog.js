@@ -1,4 +1,4 @@
-const url = "http://localhost:8888/hollund-plants/wp-json/wp/v2/posts?_embed&per_page=12";
+const url = "https://www.hollundflowerpower.one/wp-json/wp/v2/posts?_embed&per_page=12";
 const postsContainer = document.querySelector(".posts-container");
 const loadMore = document.querySelector(".load-more");
 
