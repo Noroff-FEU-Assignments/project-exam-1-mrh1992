@@ -18,7 +18,9 @@ async function getPosts() {
             const convertDate = new Date (results[i].date).toLocaleString("en-GB", {day: "numeric", month: "long", year: "numeric",});
 
             postsContainer.innerHTML += `<div class="post-card">
-                                            <img src=${results[i]._embedded['wp:featuredmedia']['0'].source_url} class="blog-img">
+                                            <a href="blogdetails.html?id=${results[i].id}">
+                                                <img src=${results[i]._embedded['wp:featuredmedia']['0'].source_url} class="blog-img">
+                                            </a>
                                             <h3>${results[i].title.rendered}</h3>
                                             <p>By: ${results[i]._embedded.author[0].name}</p>
                                             <a href="blogdetails.html?id=${results[i].id}">
