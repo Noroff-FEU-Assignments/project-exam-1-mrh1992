@@ -19,7 +19,7 @@ async function getPosts() {
 
             postsContainer.innerHTML += `<div class="post-card">
                                             <a href="blogdetails.html?id=${results[i].id}">
-                                                <img src=${results[i]._embedded['wp:featuredmedia']['0'].source_url} class="blog-img">
+                                                <img src=${results[i]._embedded['wp:featuredmedia']['0'].source_url} alt="${results[i].name}" class="blog-img">
                                             </a>
                                             <h3>${results[i].title.rendered}</h3>
                                             <p>By: ${results[i]._embedded.author[0].name}</p>
